@@ -34,6 +34,8 @@ file(GLOB_RECURSE HEADERS
 add_executable(graphite ${SOURCES} ${HEADERS})
 # add_library(graphite STATIC ${SOURCES} ${HEADERS})
 
+include_directories(src/includes)
+
 # Link libraries to the example executable
 target_link_libraries(graphite
         PRIVATE
